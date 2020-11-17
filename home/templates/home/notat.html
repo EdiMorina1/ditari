@@ -1,0 +1,13 @@
+<form method="POST">
+	{% csrf_token %}
+	<fieldset>
+		<legend>
+			Rregjistrohu
+		</legend>
+		{{form.as_p}}
+	</fieldset>
+	<div class="">
+		<button type="submit" name="button">regjistrohu</button>
+		<a href="{% url 'logout'%}">log out</a>
+	</div>
+</form>

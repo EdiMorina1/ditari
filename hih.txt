@@ -1,0 +1,728 @@
+Microsoft Windows [Version 10.0.17134.523]
+(c) 2018 Microsoft Corporation. All rights reserved.
+
+C:\Users\J-Coders-Pc4>cd desktop
+
+C:\Users\J-Coders-Pc4\Desktop>django-admin startproject ditari
+
+C:\Users\J-Coders-Pc4\Desktop>cd ditari
+
+C:\Users\J-Coders-Pc4\Desktop\ditari>python manage.py startapp home
+
+C:\Users\J-Coders-Pc4\Desktop\ditari>python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, sessions
+Running migrations:
+  Applying contenttypes.0001_initial... OK
+  Applying auth.0001_initial... OK
+  Applying admin.0001_initial... OK
+  Applying admin.0002_logentry_remove_auto_add... OK
+  Applying admin.0003_logentry_add_action_flag_choices... OK
+  Applying contenttypes.0002_remove_content_type_name... OK
+  Applying auth.0002_alter_permission_name_max_length... OK
+  Applying auth.0003_alter_user_email_max_length... OK
+  Applying auth.0004_alter_user_username_opts... OK
+  Applying auth.0005_alter_user_last_login_null... OK
+  Applying auth.0006_require_contenttypes_0002... OK
+  Applying auth.0007_alter_validators_add_error_messages... OK
+  Applying auth.0008_alter_user_username_max_length... OK
+  Applying auth.0009_alter_user_last_name_max_length... OK
+  Applying sessions.0001_initial... OK
+
+C:\Users\J-Coders-Pc4\Desktop\ditari>python manage.py runserver
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 14, 2019 - 14:19:22
+Django version 2.1.5, using settings 'ditari.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[14/Jan/2019 14:21:12] "GET / HTTP/1.1" 200 16348
+[14/Jan/2019 14:21:12] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[14/Jan/2019 14:21:13] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[14/Jan/2019 14:21:13] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[14/Jan/2019 14:21:13] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+Not Found: /favicon.ico
+[14/Jan/2019 14:21:13] "GET /favicon.ico HTTP/1.1" 404 1972
+[14/Jan/2019 14:21:28] "GET /admin/ HTTP/1.1" 302 0
+[14/Jan/2019 14:21:28] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1819
+[14/Jan/2019 14:21:28] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[14/Jan/2019 14:21:28] "GET /static/admin/css/login.css HTTP/1.1" 304 0
+[14/Jan/2019 14:21:28] "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[14/Jan/2019 14:22:23] "GET /admin/ HTTP/1.1" 302 0
+[14/Jan/2019 14:22:23] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1819
+
+C:\Users\J-Coders-Pc4\Desktop\ditari>python manage.py createsuperuser
+Username (leave blank to use 'j-coders-pc4'): test
+Email address: ditari@jcoders.com
+Password:
+Password (again):
+This password is too short. It must contain at least 8 characters.
+This password is too common.
+Bypass password validation and create user anyway? [y/N]: y
+Superuser created successfully.
+
+C:\Users\J-Coders-Pc4\Desktop\ditari>python manage.py runserver
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 14, 2019 - 14:24:51
+Django version 2.1.5, using settings 'ditari.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[14/Jan/2019 14:24:57] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1819
+[14/Jan/2019 14:25:39] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x03C56C00>
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\utils\autoreload.py", line 225, in wrapper
+    fn(*args, **kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\core\management\commands\runserver.py", line 109, in inner_run
+    autoreload.raise_last_exception()
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\utils\autoreload.py", line 248, in raise_last_exception
+    raise _exception[1]
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\core\management\__init__.py", line 337, in execute
+    autoreload.check_errors(django.setup)()
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\utils\autoreload.py", line 225, in wrapper
+    fn(*args, **kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\apps\registry.py", line 112, in populate
+    app_config.import_models()
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\apps\config.py", line 198, in import_models
+    self.models_module = import_module(models_module_name)
+  File "C:\Program Files (x86)\Python37-32\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\J-Coders-Pc4\Desktop\ditari\home\models.py", line 3, in <module>
+    class lenda (models.Models):
+AttributeError: module 'django.db.models' has no attribute 'Models'
+
+C:\Users\J-Coders-Pc4\Desktop\ditari>python manage.py makemigrations
+Traceback (most recent call last):
+  File "manage.py", line 15, in <module>
+    execute_from_command_line(sys.argv)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\core\management\__init__.py", line 381, in execute_from_command_line
+    utility.execute()
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\core\management\__init__.py", line 357, in execute
+    django.setup()
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\apps\registry.py", line 112, in populate
+    app_config.import_models()
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\apps\config.py", line 198, in import_models
+    self.models_module = import_module(models_module_name)
+  File "C:\Program Files (x86)\Python37-32\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\J-Coders-Pc4\Desktop\ditari\home\models.py", line 3, in <module>
+    class lenda (models.Models):
+AttributeError: module 'django.db.models' has no attribute 'Models'
+
+C:\Users\J-Coders-Pc4\Desktop\ditari>python manage.py makemigrations
+Migrations for 'home':
+  home\migrations\0001_initial.py
+    - Create model lenda
+
+C:\Users\J-Coders-Pc4\Desktop\ditari>
+
+C:\Users\J-Coders-Pc4\Desktop\ditari>python manage.py runserver
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 1 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): home.
+Run 'python manage.py migrate' to apply them.
+January 14, 2019 - 14:34:50
+Django version 2.1.5, using settings 'ditari.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[14/Jan/2019 14:35:30] "GET /admin/ HTTP/1.1" 200 3041
+[14/Jan/2019 14:35:30] "GET /static/admin/css/dashboard.css HTTP/1.1" 200 412
+[14/Jan/2019 14:35:30] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[14/Jan/2019 14:35:30] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x0484C300>
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\utils\autoreload.py", line 225, in wrapper
+    fn(*args, **kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\core\management\commands\runserver.py", line 109, in inner_run
+    autoreload.raise_last_exception()
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\utils\autoreload.py", line 248, in raise_last_exception
+    raise _exception[1]
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\core\management\__init__.py", line 337, in execute
+    autoreload.check_errors(django.setup)()
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\utils\autoreload.py", line 225, in wrapper
+    fn(*args, **kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\apps\registry.py", line 120, in populate
+    app_config.ready()
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\contrib\admin\apps.py", line 24, in ready
+    self.module.autodiscover()
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\contrib\admin\__init__.py", line 26, in autodiscover
+    autodiscover_modules('admin', register_to=site)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\utils\module_loading.py", line 47, in autodiscover_modules
+    import_module('%s.%s' % (app_config.name, module_to_search))
+  File "C:\Program Files (x86)\Python37-32\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\J-Coders-Pc4\Desktop\ditari\home\admin.py", line 3
+    from.models import
+                     ^
+SyntaxError: invalid syntax
+
+C:\Users\J-Coders-Pc4\Desktop\ditari>python manage.py migrate
+Traceback (most recent call last):
+  File "manage.py", line 15, in <module>
+    execute_from_command_line(sys.argv)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\core\management\__init__.py", line 381, in execute_from_command_line
+    utility.execute()
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\core\management\__init__.py", line 357, in execute
+    django.setup()
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\apps\registry.py", line 120, in populate
+    app_config.ready()
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\contrib\admin\apps.py", line 24, in ready
+    self.module.autodiscover()
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\contrib\admin\__init__.py", line 26, in autodiscover
+    autodiscover_modules('admin', register_to=site)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\utils\module_loading.py", line 47, in autodiscover_modules
+    import_module('%s.%s' % (app_config.name, module_to_search))
+  File "C:\Program Files (x86)\Python37-32\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\J-Coders-Pc4\Desktop\ditari\home\admin.py", line 3
+    from.models import
+                     ^
+SyntaxError: invalid syntax
+
+C:\Users\J-Coders-Pc4\Desktop\ditari>python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, home, sessions
+Running migrations:
+  Applying home.0001_initial... OK
+
+C:\Users\J-Coders-Pc4\Desktop\ditari>python manage.py runserver
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 14, 2019 - 14:41:25
+Django version 2.1.5, using settings 'ditari.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[14/Jan/2019 14:41:30] "GET /admin/ HTTP/1.1" 200 3698
+[14/Jan/2019 14:41:36] "GET /admin/home/lenda/ HTTP/1.1" 200 3154
+[14/Jan/2019 14:41:36] "GET /admin/jsi18n/ HTTP/1.1" 200 3185
+[14/Jan/2019 14:41:36] "GET /static/admin/css/changelists.css HTTP/1.1" 200 6170
+[14/Jan/2019 14:41:36] "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 363
+[14/Jan/2019 14:41:36] "GET /static/admin/js/core.js HTTP/1.1" 200 7135
+[14/Jan/2019 14:41:36] "GET /static/admin/js/urlify.js HTTP/1.1" 200 8972
+[14/Jan/2019 14:41:36] "GET /static/admin/js/actions.js HTTP/1.1" 200 6538
+[14/Jan/2019 14:41:36] "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1530
+[14/Jan/2019 14:41:36] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 6918
+[14/Jan/2019 14:41:36] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 271751
+[14/Jan/2019 14:41:36] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 128820
+[14/Jan/2019 14:41:36] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+[14/Jan/2019 14:41:44] "GET /admin/ HTTP/1.1" 200 3698
+Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x03C4B030>
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\utils\autoreload.py", line 225, in wrapper
+    fn(*args, **kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\core\management\commands\runserver.py", line 109, in inner_run
+    autoreload.raise_last_exception()
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\utils\autoreload.py", line 248, in raise_last_exception
+    raise _exception[1]
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\core\management\__init__.py", line 337, in execute
+    autoreload.check_errors(django.setup)()
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\utils\autoreload.py", line 225, in wrapper
+    fn(*args, **kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\apps\registry.py", line 112, in populate
+    app_config.import_models()
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\apps\config.py", line 198, in import_models
+    self.models_module = import_module(models_module_name)
+  File "C:\Program Files (x86)\Python37-32\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\J-Coders-Pc4\Desktop\ditari\home\models.py", line 6
+    class profesori (models.Model)
+                                 ^
+SyntaxError: invalid syntax
+Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x043B9030>
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\utils\autoreload.py", line 225, in wrapper
+    fn(*args, **kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\core\management\commands\runserver.py", line 109, in inner_run
+    autoreload.raise_last_exception()
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\utils\autoreload.py", line 248, in raise_last_exception
+    raise _exception[1]
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\core\management\__init__.py", line 337, in execute
+    autoreload.check_errors(django.setup)()
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\utils\autoreload.py", line 225, in wrapper
+    fn(*args, **kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\apps\registry.py", line 112, in populate
+    app_config.import_models()
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\apps\config.py", line 198, in import_models
+    self.models_module = import_module(models_module_name)
+  File "C:\Program Files (x86)\Python37-32\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\J-Coders-Pc4\Desktop\ditari\home\models.py", line 6
+    class profesori (models.Model)
+                                 ^
+SyntaxError: invalid syntax
+
+C:\Users\J-Coders-Pc4\Desktop\ditari>python manage.py makemigrations
+Traceback (most recent call last):
+  File "manage.py", line 15, in <module>
+    execute_from_command_line(sys.argv)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\core\management\__init__.py", line 381, in execute_from_command_line
+    utility.execute()
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\core\management\__init__.py", line 357, in execute
+    django.setup()
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\apps\registry.py", line 112, in populate
+    app_config.import_models()
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\apps\config.py", line 198, in import_models
+    self.models_module = import_module(models_module_name)
+  File "C:\Program Files (x86)\Python37-32\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\J-Coders-Pc4\Desktop\ditari\home\models.py", line 6
+    class profesori (models.Model)
+                                 ^
+SyntaxError: invalid syntax
+
+C:\Users\J-Coders-Pc4\Desktop\ditari>python manage.py makemigrations
+Traceback (most recent call last):
+  File "manage.py", line 15, in <module>
+    execute_from_command_line(sys.argv)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\core\management\__init__.py", line 381, in execute_from_command_line
+    utility.execute()
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\core\management\__init__.py", line 357, in execute
+    django.setup()
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\apps\registry.py", line 112, in populate
+    app_config.import_models()
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\apps\config.py", line 198, in import_models
+    self.models_module = import_module(models_module_name)
+  File "C:\Program Files (x86)\Python37-32\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\J-Coders-Pc4\Desktop\ditari\home\models.py", line 6, in <module>
+    class profesori (models.Model):
+  File "C:\Users\J-Coders-Pc4\Desktop\ditari\home\models.py", line 11, in profesori
+    pas= models.PasswordField(max_length=50)
+AttributeError: module 'django.db.models' has no attribute 'PasswordField'
+
+C:\Users\J-Coders-Pc4\Desktop\ditari>python manage.py makemigrations
+Migrations for 'home':
+  home\migrations\0002_profesori.py
+    - Create model profesori
+
+C:\Users\J-Coders-Pc4\Desktop\ditari>python manage.py runserver
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 1 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): home.
+Run 'python manage.py migrate' to apply them.
+January 14, 2019 - 14:53:47
+Django version 2.1.5, using settings 'ditari.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[14/Jan/2019 14:53:50] "GET /admin/ HTTP/1.1" 200 3698
+[14/Jan/2019 14:53:51] "GET /admin/ HTTP/1.1" 200 3698
+
+C:\Users\J-Coders-Pc4\Desktop\ditari>python manage.py runserver
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 1 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): home.
+Run 'python manage.py migrate' to apply them.
+January 14, 2019 - 14:54:53
+Django version 2.1.5, using settings 'ditari.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 1 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): home.
+Run 'python manage.py migrate' to apply them.
+January 14, 2019 - 14:56:08
+Django version 2.1.5, using settings 'ditari.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+C:\Users\J-Coders-Pc4\Desktop\ditari>python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, home, sessions
+Running migrations:
+  Applying home.0002_profesori... OK
+
+C:\Users\J-Coders-Pc4\Desktop\ditari>python manage.py runserver
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 14, 2019 - 14:56:38
+Django version 2.1.5, using settings 'ditari.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[14/Jan/2019 14:56:42] "GET /admin/ HTTP/1.1" 200 4139
+[14/Jan/2019 14:56:44] "GET /admin/home/profesori/ HTTP/1.1" 200 3182
+[14/Jan/2019 14:56:44] "GET /admin/jsi18n/ HTTP/1.1" 200 3185
+[14/Jan/2019 14:56:46] "GET /admin/ HTTP/1.1" 200 4139
+[14/Jan/2019 14:57:02] "GET /admin/home/lenda/ HTTP/1.1" 200 3154
+[14/Jan/2019 14:57:02] "GET /admin/jsi18n/ HTTP/1.1" 200 3185
+[14/Jan/2019 14:57:05] "GET /admin/home/lenda/add/ HTTP/1.1" 200 3979
+[14/Jan/2019 14:57:05] "GET /admin/jsi18n/ HTTP/1.1" 200 3185
+[14/Jan/2019 14:57:05] "GET /static/admin/css/forms.css HTTP/1.1" 200 8505
+[14/Jan/2019 14:57:05] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 495
+[14/Jan/2019 14:57:05] "GET /static/admin/js/change_form.js HTTP/1.1" 200 712
+[14/Jan/2019 14:57:05] "GET /static/admin/css/widgets.css HTTP/1.1" 200 10340
+[14/Jan/2019 14:57:17] "POST /admin/home/lenda/add/ HTTP/1.1" 302 0
+[14/Jan/2019 14:57:17] "GET /admin/home/lenda/ HTTP/1.1" 200 4506
+[14/Jan/2019 14:57:17] "GET /admin/jsi18n/ HTTP/1.1" 200 3185
+[14/Jan/2019 14:57:17] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+[14/Jan/2019 14:57:29] "GET /admin/ HTTP/1.1" 200 4462
+[14/Jan/2019 14:57:31] "GET /admin/home/profesori/ HTTP/1.1" 200 3182
+[14/Jan/2019 14:57:31] "GET /admin/jsi18n/ HTTP/1.1" 200 3185
+[14/Jan/2019 14:57:32] "GET /admin/home/profesori/add/ HTTP/1.1" 200 7148
+[14/Jan/2019 14:57:32] "GET /admin/jsi18n/ HTTP/1.1" 200 3185
+Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x04A970C0>
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\utils\autoreload.py", line 225, in wrapper
+    fn(*args, **kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\core\management\commands\runserver.py", line 109, in inner_run
+    autoreload.raise_last_exception()
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\utils\autoreload.py", line 248, in raise_last_exception
+    raise _exception[1]
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\core\management\__init__.py", line 337, in execute
+    autoreload.check_errors(django.setup)()
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\utils\autoreload.py", line 225, in wrapper
+    fn(*args, **kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\apps\registry.py", line 112, in populate
+    app_config.import_models()
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\apps\config.py", line 198, in import_models
+    self.models_module = import_module(models_module_name)
+  File "C:\Program Files (x86)\Python37-32\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\J-Coders-Pc4\Desktop\ditari\home\models.py", line 5
+    def__str___(self):
+                     ^
+SyntaxError: invalid syntax
+
+C:\Users\J-Coders-Pc4\Desktop\ditari>python manage.py runserver
+Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x044F7078>
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\utils\autoreload.py", line 225, in wrapper
+    fn(*args, **kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\core\management\commands\runserver.py", line 109, in inner_run
+    autoreload.raise_last_exception()
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\utils\autoreload.py", line 248, in raise_last_exception
+    raise _exception[1]
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\core\management\__init__.py", line 337, in execute
+    autoreload.check_errors(django.setup)()
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\utils\autoreload.py", line 225, in wrapper
+    fn(*args, **kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\apps\registry.py", line 112, in populate
+    app_config.import_models()
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\apps\config.py", line 198, in import_models
+    self.models_module = import_module(models_module_name)
+  File "C:\Program Files (x86)\Python37-32\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\J-Coders-Pc4\Desktop\ditari\home\models.py", line 5
+    def__str___(self):
+                     ^
+SyntaxError: invalid syntax
+Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x03C4B030>
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\utils\autoreload.py", line 225, in wrapper
+    fn(*args, **kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\core\management\commands\runserver.py", line 109, in inner_run
+    autoreload.raise_last_exception()
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\utils\autoreload.py", line 248, in raise_last_exception
+    raise _exception[1]
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\core\management\__init__.py", line 337, in execute
+    autoreload.check_errors(django.setup)()
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\utils\autoreload.py", line 225, in wrapper
+    fn(*args, **kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\apps\registry.py", line 112, in populate
+    app_config.import_models()
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\apps\config.py", line 198, in import_models
+    self.models_module = import_module(models_module_name)
+  File "C:\Program Files (x86)\Python37-32\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\J-Coders-Pc4\Desktop\ditari\home\models.py", line 5
+    def__str___(self):
+                     ^
+SyntaxError: invalid syntax
+
+C:\Users\J-Coders-Pc4\Desktop\ditari>python manage.py runserver
+Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x03C47078>
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\utils\autoreload.py", line 225, in wrapper
+    fn(*args, **kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\core\management\commands\runserver.py", line 109, in inner_run
+    autoreload.raise_last_exception()
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\utils\autoreload.py", line 248, in raise_last_exception
+    raise _exception[1]
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\core\management\__init__.py", line 337, in execute
+    autoreload.check_errors(django.setup)()
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\utils\autoreload.py", line 225, in wrapper
+    fn(*args, **kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\apps\registry.py", line 112, in populate
+    app_config.import_models()
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\apps\config.py", line 198, in import_models
+    self.models_module = import_module(models_module_name)
+  File "C:\Program Files (x86)\Python37-32\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\J-Coders-Pc4\Desktop\ditari\home\models.py", line 5
+    def__str___(self):
+                     ^
+SyntaxError: invalid syntax
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 14, 2019 - 15:01:15
+Django version 2.1.5, using settings 'ditari.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+C:\Users\J-Coders-Pc4\Desktop\ditari>python manage.py runserver
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 14, 2019 - 15:01:23
+Django version 2.1.5, using settings 'ditari.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[14/Jan/2019 15:01:29] "GET /admin/home/profesori/add/ HTTP/1.1" 200 7148
+[14/Jan/2019 15:01:29] "GET /admin/jsi18n/ HTTP/1.1" 200 3185
+Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x03CE4CD8>
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\utils\autoreload.py", line 225, in wrapper
+    fn(*args, **kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\core\management\commands\runserver.py", line 109, in inner_run
+    autoreload.raise_last_exception()
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\utils\autoreload.py", line 248, in raise_last_exception
+    raise _exception[1]
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\core\management\__init__.py", line 337, in execute
+    autoreload.check_errors(django.setup)()
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\utils\autoreload.py", line 225, in wrapper
+    fn(*args, **kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\apps\registry.py", line 112, in populate
+    app_config.import_models()
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\apps\config.py", line 198, in import_models
+    self.models_module = import_module(models_module_name)
+  File "C:\Program Files (x86)\Python37-32\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\J-Coders-Pc4\Desktop\ditari\home\models.py", line 19, in <module>
+    class klasa (models.Model):
+  File "C:\Users\J-Coders-Pc4\Desktop\ditari\home\models.py", line 22, in klasa
+    vitiShkollor=models.DateTime(default= datetime.now)
+AttributeError: module 'django.db.models' has no attribute 'DateTime'
+
+C:\Users\J-Coders-Pc4\Desktop\ditari>python manage.py makemigrations
+Traceback (most recent call last):
+  File "manage.py", line 15, in <module>
+    execute_from_command_line(sys.argv)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\core\management\__init__.py", line 381, in execute_from_command_line
+    utility.execute()
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\core\management\__init__.py", line 357, in execute
+    django.setup()
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\apps\registry.py", line 112, in populate
+    app_config.import_models()
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\apps\config.py", line 198, in import_models
+    self.models_module = import_module(models_module_name)
+  File "C:\Program Files (x86)\Python37-32\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\J-Coders-Pc4\Desktop\ditari\home\models.py", line 19, in <module>
+    class klasa (models.Model):
+  File "C:\Users\J-Coders-Pc4\Desktop\ditari\home\models.py", line 22, in klasa
+    vitiShkollor=models.DateTime(default= datetime.now)
+AttributeError: module 'django.db.models' has no attribute 'DateTime'
+
+C:\Users\J-Coders-Pc4\Desktop\ditari>python manage.py makemigrations
+Migrations for 'home':
+  home\migrations\0003_klasa.py
+    - Create model klasa
+
+C:\Users\J-Coders-Pc4\Desktop\ditari>python manage.py makemigrations
+No changes detected
+
+C:\Users\J-Coders-Pc4\Desktop\ditari>python manage.py runserver
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 1 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): home.
+Run 'python manage.py migrate' to apply them.
+January 14, 2019 - 15:12:53
+Django version 2.1.5, using settings 'ditari.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[14/Jan/2019 15:12:57] "GET /admin/home/profesori/add/ HTTP/1.1" 200 7148
+[14/Jan/2019 15:12:57] "GET /admin/jsi18n/ HTTP/1.1" 200 3185
+[14/Jan/2019 15:13:01] "GET /admin/ HTTP/1.1" 200 4883
+[14/Jan/2019 15:13:19] "GET /admin/home/profesori/ HTTP/1.1" 200 3182
+[14/Jan/2019 15:13:19] "GET /admin/jsi18n/ HTTP/1.1" 200 3185
+[14/Jan/2019 15:13:21] "GET /admin/home/profesori/add/ HTTP/1.1" 200 7148
+[14/Jan/2019 15:13:21] "GET /admin/jsi18n/ HTTP/1.1" 200 3185
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 1 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): home.
+Run 'python manage.py migrate' to apply them.
+January 14, 2019 - 15:15:40
+Django version 2.1.5, using settings 'ditari.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[14/Jan/2019 15:15:42] "GET /admin/home/profesori/add/ HTTP/1.1" 200 7148
+[14/Jan/2019 15:15:42] "GET /admin/jsi18n/ HTTP/1.1" 200 3185
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 1 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): home.
+Run 'python manage.py migrate' to apply them.
+January 14, 2019 - 15:16:10
+Django version 2.1.5, using settings 'ditari.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 1 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): home.
+Run 'python manage.py migrate' to apply them.
+January 14, 2019 - 15:16:55
+Django version 2.1.5, using settings 'ditari.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 1 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): home.
+Run 'python manage.py migrate' to apply them.
+January 14, 2019 - 15:17:01
+Django version 2.1.5, using settings 'ditari.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[14/Jan/2019 15:17:04] "GET /admin/home/profesori/add/ HTTP/1.1" 200 7148
+[14/Jan/2019 15:17:04] "GET /admin/jsi18n/ HTTP/1.1" 200 3185

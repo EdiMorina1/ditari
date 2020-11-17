@@ -1,0 +1,22 @@
+{% if user.is_authenticated%}
+{% if user.b.pozita == 1%}
+<form method="POST">
+	{% csrf_token %}
+	<fieldset>
+		<legend>
+			Rregjistrohu
+		</legend>
+		{{form}}
+	</fieldset>
+	<div class="">
+		<button type="submit" name="button">regjistrohu</button>
+	</div>
+</form>
+{% else %}
+<h1>Nuk je Profesor mor lali nga skrapari</h1>
+{% endif %}
+{% else %}
+<center><h1>
+	KYQU
+</h1></center>
+{% endif %}

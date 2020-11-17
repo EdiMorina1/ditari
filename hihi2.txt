@@ -1,0 +1,911 @@
+Microsoft Windows [Version 10.0.17134.523]
+(c) 2018 Microsoft Corporation. All rights reserved.
+
+C:\Users\J-Coders-Pc4>python manage.py runserver
+python: can't open file 'manage.py': [Errno 2] No such file or directory
+
+C:\Users\J-Coders-Pc4>cd desktop
+
+C:\Users\J-Coders-Pc4\Desktop>cd ditari
+
+C:\Users\J-Coders-Pc4\Desktop\ditari>python manage.py runserver
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 1 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): home.
+Run 'python manage.py migrate' to apply them.
+January 14, 2019 - 15:18:14
+Django version 2.1.5, using settings 'ditari.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[14/Jan/2019 15:18:19] "GET /admin/home/profesori/add/ HTTP/1.1" 200 7148
+[14/Jan/2019 15:18:19] "GET /admin/jsi18n/ HTTP/1.1" 200 3185
+[14/Jan/2019 15:18:25] "GET /admin/home/profesori/add/ HTTP/1.1" 200 7148
+[14/Jan/2019 15:18:25] "GET /admin/jsi18n/ HTTP/1.1" 200 3185
+[14/Jan/2019 15:18:43] "GET /admin/home/profesori/add/ HTTP/1.1" 200 7148
+[14/Jan/2019 15:18:43] "GET /admin/jsi18n/ HTTP/1.1" 200 3185
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 1 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): home.
+Run 'python manage.py migrate' to apply them.
+January 14, 2019 - 15:20:57
+Django version 2.1.5, using settings 'ditari.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+C:\Users\J-Coders-Pc4\Desktop\ditari>python manage.py runserver
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 1 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): home.
+Run 'python manage.py migrate' to apply them.
+January 14, 2019 - 15:21:29
+Django version 2.1.5, using settings 'ditari.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[14/Jan/2019 15:21:31] "GET /admin/home/profesori/add/ HTTP/1.1" 200 7148
+[14/Jan/2019 15:21:31] "GET /admin/jsi18n/ HTTP/1.1" 200 3185
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 1 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): home.
+Run 'python manage.py migrate' to apply them.
+January 14, 2019 - 15:22:11
+Django version 2.1.5, using settings 'ditari.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+C:\Users\J-Coders-Pc4\Desktop\ditari>python manage.py runserver
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 1 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): home.
+Run 'python manage.py migrate' to apply them.
+January 14, 2019 - 15:22:18
+Django version 2.1.5, using settings 'ditari.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[14/Jan/2019 15:22:21] "GET /admin/home/profesori/add/ HTTP/1.1" 200 7142
+[14/Jan/2019 15:22:21] "GET /admin/jsi18n/ HTTP/1.1" 200 3185
+[14/Jan/2019 15:22:59] "POST /admin/home/profesori/add/ HTTP/1.1" 302 0
+[14/Jan/2019 15:22:59] "GET /admin/home/profesori/ HTTP/1.1" 200 4550
+[14/Jan/2019 15:22:59] "GET /admin/jsi18n/ HTTP/1.1" 200 3185
+[14/Jan/2019 15:23:01] "GET /admin/home/profesori/1/change/ HTTP/1.1" 200 7454
+[14/Jan/2019 15:23:01] "GET /admin/jsi18n/ HTTP/1.1" 200 3185
+[14/Jan/2019 15:23:04] "GET /admin/home/profesori/ HTTP/1.1" 200 4358
+[14/Jan/2019 15:23:04] "GET /admin/jsi18n/ HTTP/1.1" 200 3185
+[14/Jan/2019 15:23:09] "GET /admin/home/ HTTP/1.1" 200 3273
+Internal Server Error: /admin/home/klasa/
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\backends\sqlite3\base.py", line 298, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: home_klasa
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\contrib\admin\options.py", line 604, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\contrib\admin\sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\contrib\admin\options.py", line 1675, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\contrib\admin\options.py", line 742, in get_changelist_instance
+    sortable_by,
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\contrib\admin\views\main.py", line 81, in __init__
+    self.get_results(request)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\contrib\admin\views\main.py", line 209, in get_results
+    result_count = paginator.count
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\utils\functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\core\paginator.py", line 87, in count
+    return self.object_list.count()
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\models\query.py", line 383, in count
+    return self.query.get_count(using=self.db)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\models\sql\query.py", line 498, in get_count
+    number = obj.get_aggregation(using, ['__count'])['__count']
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\models\sql\query.py", line 483, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\models\sql\compiler.py", line 1065, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\backends\utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\backends\utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\backends\utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\backends\sqlite3\base.py", line 298, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: home_klasa
+[14/Jan/2019 15:23:10] "GET /admin/home/klasa/ HTTP/1.1" 500 169662
+[14/Jan/2019 15:23:12] "GET /admin/home/ HTTP/1.1" 200 3273
+Internal Server Error: /admin/home/klasa/
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\backends\sqlite3\base.py", line 298, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: home_klasa
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\contrib\admin\options.py", line 604, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\contrib\admin\sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\contrib\admin\options.py", line 1675, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\contrib\admin\options.py", line 742, in get_changelist_instance
+    sortable_by,
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\contrib\admin\views\main.py", line 81, in __init__
+    self.get_results(request)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\contrib\admin\views\main.py", line 209, in get_results
+    result_count = paginator.count
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\utils\functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\core\paginator.py", line 87, in count
+    return self.object_list.count()
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\models\query.py", line 383, in count
+    return self.query.get_count(using=self.db)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\models\sql\query.py", line 498, in get_count
+    number = obj.get_aggregation(using, ['__count'])['__count']
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\models\sql\query.py", line 483, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\models\sql\compiler.py", line 1065, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\backends\utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\backends\utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\backends\utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\backends\sqlite3\base.py", line 298, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: home_klasa
+[14/Jan/2019 15:23:14] "GET /admin/home/klasa/ HTTP/1.1" 500 169662
+[14/Jan/2019 15:23:16] "GET /admin/home/ HTTP/1.1" 200 3273
+Internal Server Error: /admin/home/klasa/
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\backends\sqlite3\base.py", line 298, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: home_klasa
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\contrib\admin\options.py", line 604, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\contrib\admin\sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\contrib\admin\options.py", line 1675, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\contrib\admin\options.py", line 742, in get_changelist_instance
+    sortable_by,
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\contrib\admin\views\main.py", line 81, in __init__
+    self.get_results(request)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\contrib\admin\views\main.py", line 209, in get_results
+    result_count = paginator.count
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\utils\functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\core\paginator.py", line 87, in count
+    return self.object_list.count()
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\models\query.py", line 383, in count
+    return self.query.get_count(using=self.db)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\models\sql\query.py", line 498, in get_count
+    number = obj.get_aggregation(using, ['__count'])['__count']
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\models\sql\query.py", line 483, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\models\sql\compiler.py", line 1065, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\backends\utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\backends\utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\backends\utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\backends\sqlite3\base.py", line 298, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: home_klasa
+[14/Jan/2019 15:23:21] "GET /admin/home/klasa/ HTTP/1.1" 500 169662
+[14/Jan/2019 15:23:30] "GET /admin/home/ HTTP/1.1" 200 3273
+Internal Server Error: /admin/home/klasa/
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\backends\sqlite3\base.py", line 298, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: home_klasa
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\contrib\admin\options.py", line 604, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\contrib\admin\sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\contrib\admin\options.py", line 1675, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\contrib\admin\options.py", line 742, in get_changelist_instance
+    sortable_by,
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\contrib\admin\views\main.py", line 81, in __init__
+    self.get_results(request)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\contrib\admin\views\main.py", line 209, in get_results
+    result_count = paginator.count
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\utils\functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\core\paginator.py", line 87, in count
+    return self.object_list.count()
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\models\query.py", line 383, in count
+    return self.query.get_count(using=self.db)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\models\sql\query.py", line 498, in get_count
+    number = obj.get_aggregation(using, ['__count'])['__count']
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\models\sql\query.py", line 483, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\models\sql\compiler.py", line 1065, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\backends\utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\backends\utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\backends\utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\backends\sqlite3\base.py", line 298, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: home_klasa
+[14/Jan/2019 15:23:38] "GET /admin/home/klasa/ HTTP/1.1" 500 169662
+[14/Jan/2019 15:23:40] "GET /admin/home/ HTTP/1.1" 200 3273
+[14/Jan/2019 15:23:40] "GET /admin/home/profesori/ HTTP/1.1" 200 4358
+[14/Jan/2019 15:23:42] "GET /admin/home/profesori/1/change/ HTTP/1.1" 200 7454
+[14/Jan/2019 15:23:42] "GET /admin/jsi18n/ HTTP/1.1" 200 3185
+[14/Jan/2019 15:23:46] "GET /admin/home/profesori/ HTTP/1.1" 200 4358
+[14/Jan/2019 15:23:48] "GET /admin/home/ HTTP/1.1" 200 3273
+Internal Server Error: /admin/home/klasa/
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\backends\sqlite3\base.py", line 298, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: home_klasa
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\contrib\admin\options.py", line 604, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\contrib\admin\sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\contrib\admin\options.py", line 1675, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\contrib\admin\options.py", line 742, in get_changelist_instance
+    sortable_by,
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\contrib\admin\views\main.py", line 81, in __init__
+    self.get_results(request)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\contrib\admin\views\main.py", line 209, in get_results
+    result_count = paginator.count
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\utils\functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\core\paginator.py", line 87, in count
+    return self.object_list.count()
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\models\query.py", line 383, in count
+    return self.query.get_count(using=self.db)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\models\sql\query.py", line 498, in get_count
+    number = obj.get_aggregation(using, ['__count'])['__count']
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\models\sql\query.py", line 483, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\models\sql\compiler.py", line 1065, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\backends\utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\backends\utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\backends\utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\backends\sqlite3\base.py", line 298, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: home_klasa
+[14/Jan/2019 15:23:55] "GET /admin/home/klasa/ HTTP/1.1" 500 169680
+[14/Jan/2019 15:23:58] "GET /admin/home/ HTTP/1.1" 200 3273
+Internal Server Error: /admin/home/klasa/
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\backends\sqlite3\base.py", line 298, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: home_klasa
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\contrib\admin\options.py", line 604, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\contrib\admin\sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\contrib\admin\options.py", line 1675, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\contrib\admin\options.py", line 742, in get_changelist_instance
+    sortable_by,
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\contrib\admin\views\main.py", line 81, in __init__
+    self.get_results(request)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\contrib\admin\views\main.py", line 209, in get_results
+    result_count = paginator.count
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\utils\functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\core\paginator.py", line 87, in count
+    return self.object_list.count()
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\models\query.py", line 383, in count
+    return self.query.get_count(using=self.db)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\models\sql\query.py", line 498, in get_count
+    number = obj.get_aggregation(using, ['__count'])['__count']
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\models\sql\query.py", line 483, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\models\sql\compiler.py", line 1065, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\backends\utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\backends\utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\backends\utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\backends\sqlite3\base.py", line 298, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: home_klasa
+[14/Jan/2019 15:23:59] "GET /admin/home/klasa/ HTTP/1.1" 500 169660
+[14/Jan/2019 15:24:00] "GET /admin/home/ HTTP/1.1" 200 3273
+
+C:\Users\J-Coders-Pc4\Desktop\ditari>python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, home, sessions
+Running migrations:
+  Applying home.0003_klasa... OK
+
+C:\Users\J-Coders-Pc4\Desktop\ditari>python manage.py runserver
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 14, 2019 - 15:24:39
+Django version 2.1.5, using settings 'ditari.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[14/Jan/2019 15:24:39] "GET /admin/home/ HTTP/1.1" 200 3273
+Internal Server Error: /admin/home/klasa/
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\backends\sqlite3\base.py", line 298, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: home_klasa.idProfi_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\contrib\admin\options.py", line 604, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\contrib\admin\sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\contrib\admin\options.py", line 1793, in changelist_view
+    'selection_note': _('0 of %(cnt)s selected') % {'cnt': len(cl.result_list)},
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\models\query.py", line 250, in __len__
+    self._fetch_all()
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\models\query.py", line 1186, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\models\query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\models\sql\compiler.py", line 1065, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\backends\utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\backends\utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\backends\utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\backends\sqlite3\base.py", line 298, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: home_klasa.idProfi_id
+[14/Jan/2019 15:24:52] "GET /admin/home/klasa/ HTTP/1.1" 500 151605
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 14, 2019 - 15:27:40
+Django version 2.1.5, using settings 'ditari.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+C:\Users\J-Coders-Pc4\Desktop\ditari>python manage.py runserver
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 14, 2019 - 15:27:48
+Django version 2.1.5, using settings 'ditari.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+Internal Server Error: /admin/home/klasa/
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\backends\sqlite3\base.py", line 298, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: home_klasa.idProfi_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\contrib\admin\options.py", line 604, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\contrib\admin\sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\contrib\admin\options.py", line 1793, in changelist_view
+    'selection_note': _('0 of %(cnt)s selected') % {'cnt': len(cl.result_list)},
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\models\query.py", line 250, in __len__
+    self._fetch_all()
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\models\query.py", line 1186, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\models\query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\models\sql\compiler.py", line 1065, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\backends\utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\backends\utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\backends\utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\db\backends\sqlite3\base.py", line 298, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: home_klasa.idProfi_id
+[14/Jan/2019 15:27:50] "GET /admin/home/klasa/ HTTP/1.1" 500 151738
+
+C:\Users\J-Coders-Pc4\Desktop\ditari>python manage.py makemigrations
+Did you rename klasa.idLenda to klasa.idProfi (a ForeignKey)? [y/N] y
+Migrations for 'home':
+  home\migrations\0004_auto_20190114_1528.py
+    - Rename field idLenda on klasa to idProfi
+
+C:\Users\J-Coders-Pc4\Desktop\ditari>python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, home, sessions
+Running migrations:
+  Applying home.0004_auto_20190114_1528... OK
+
+C:\Users\J-Coders-Pc4\Desktop\ditari>python manage.py runserver
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 14, 2019 - 15:28:31
+Django version 2.1.5, using settings 'ditari.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[14/Jan/2019 15:28:34] "GET /admin/home/klasa/ HTTP/1.1" 200 3154
+[14/Jan/2019 15:28:34] "GET /admin/jsi18n/ HTTP/1.1" 200 3185
+[14/Jan/2019 15:28:37] "GET /admin/home/klasa/add/ HTTP/1.1" 200 6686
+[14/Jan/2019 15:28:37] "GET /admin/jsi18n/ HTTP/1.1" 200 3185
+[14/Jan/2019 15:28:37] "GET /static/admin/js/calendar.js HTTP/1.1" 200 7777
+[14/Jan/2019 15:28:37] "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 20281
+[14/Jan/2019 15:28:37] "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+[14/Jan/2019 15:28:37] "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+Microsoft Windows [Version 10.0.17134.523]
+(c) 2018 Microsoft Corporation. All rights reserved.
+
+C:\Users\J-Coders-Pc4>cd desktop
+
+C:\Users\J-Coders-Pc4\Desktop>cd ditari
+
+C:\Users\J-Coders-Pc4\Desktop\ditari>python manage.py runserver
+Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x04757078>
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\utils\autoreload.py", line 225, in wrapper
+    fn(*args, **kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\core\management\commands\runserver.py", line 109, in inner_run
+    autoreload.raise_last_exception()
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\utils\autoreload.py", line 248, in raise_last_exception
+    raise _exception[1]
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\core\management\__init__.py", line 337, in execute
+    autoreload.check_errors(django.setup)()
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\utils\autoreload.py", line 225, in wrapper
+    fn(*args, **kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\apps\registry.py", line 112, in populate
+    app_config.import_models()
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\apps\config.py", line 198, in import_models
+    self.models_module = import_module(models_module_name)
+  File "C:\Program Files (x86)\Python37-32\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\J-Coders-Pc4\Desktop\ditari\home\models.py", line 25
+    return self.emriKlasa+"/"+self.paralelja
+                                           ^
+TabError: inconsistent use of tabs and spaces in indentation
+Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x03E070C0>
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\utils\autoreload.py", line 225, in wrapper
+    fn(*args, **kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\core\management\commands\runserver.py", line 109, in inner_run
+    autoreload.raise_last_exception()
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\utils\autoreload.py", line 248, in raise_last_exception
+    raise _exception[1]
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\core\management\__init__.py", line 337, in execute
+    autoreload.check_errors(django.setup)()
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\utils\autoreload.py", line 225, in wrapper
+    fn(*args, **kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\apps\registry.py", line 112, in populate
+    app_config.import_models()
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\apps\config.py", line 198, in import_models
+    self.models_module = import_module(models_module_name)
+  File "C:\Program Files (x86)\Python37-32\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\J-Coders-Pc4\Desktop\ditari\home\models.py", line 28
+    mbiemriNx=models.CharField(max_length=50)
+                                            ^
+IndentationError: unindent does not match any outer indentation level
+Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x038006F0>
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\utils\autoreload.py", line 225, in wrapper
+    fn(*args, **kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\core\management\commands\runserver.py", line 109, in inner_run
+    autoreload.raise_last_exception()
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\utils\autoreload.py", line 248, in raise_last_exception
+    raise _exception[1]
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\core\management\__init__.py", line 337, in execute
+    autoreload.check_errors(django.setup)()
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\utils\autoreload.py", line 225, in wrapper
+    fn(*args, **kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\apps\registry.py", line 112, in populate
+    app_config.import_models()
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\apps\config.py", line 198, in import_models
+    self.models_module = import_module(models_module_name)
+  File "C:\Program Files (x86)\Python37-32\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\J-Coders-Pc4\Desktop\ditari\home\models.py", line 29
+    emriPrindit=models.CharField(max_length=50)
+                                              ^
+IndentationError: unindent does not match any outer indentation level
+Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x0413B030>
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\utils\autoreload.py", line 225, in wrapper
+    fn(*args, **kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\core\management\commands\runserver.py", line 109, in inner_run
+    autoreload.raise_last_exception()
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\utils\autoreload.py", line 248, in raise_last_exception
+    raise _exception[1]
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\core\management\__init__.py", line 337, in execute
+    autoreload.check_errors(django.setup)()
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\utils\autoreload.py", line 225, in wrapper
+    fn(*args, **kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\apps\registry.py", line 112, in populate
+    app_config.import_models()
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\apps\config.py", line 198, in import_models
+    self.models_module = import_module(models_module_name)
+  File "C:\Program Files (x86)\Python37-32\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\J-Coders-Pc4\Desktop\ditari\home\models.py", line 32
+    def __str__(self):
+                     ^
+IndentationError: unindent does not match any outer indentation level
+Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x03B570C0>
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\utils\autoreload.py", line 225, in wrapper
+    fn(*args, **kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\core\management\commands\runserver.py", line 109, in inner_run
+    autoreload.raise_last_exception()
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\utils\autoreload.py", line 248, in raise_last_exception
+    raise _exception[1]
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\core\management\__init__.py", line 337, in execute
+    autoreload.check_errors(django.setup)()
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\utils\autoreload.py", line 225, in wrapper
+    fn(*args, **kwargs)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\apps\registry.py", line 112, in populate
+    app_config.import_models()
+  File "C:\Program Files (x86)\Python37-32\lib\site-packages\django\apps\config.py", line 198, in import_models
+    self.models_module = import_module(models_module_name)
+  File "C:\Program Files (x86)\Python37-32\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\J-Coders-Pc4\Desktop\ditari\home\models.py", line 33
+    return.self.emriNx+" "+self.mbiemriNx
+          ^
+SyntaxError: invalid syntax
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 14, 2019 - 15:37:51
+Django version 2.1.5, using settings 'ditari.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+C:\Users\J-Coders-Pc4\Desktop\ditari>python manage.py makemigrations
+Migrations for 'home':
+  home\migrations\0005_nxenesi.py
+    - Create model nxenesi
+
+C:\Users\J-Coders-Pc4\Desktop\ditari>python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, home, sessions
+Running migrations:
+  Applying home.0005_nxenesi... OK
+
+C:\Users\J-Coders-Pc4\Desktop\ditari>python manage.py runserver
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 14, 2019 - 15:38:20
+Django version 2.1.5, using settings 'ditari.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[14/Jan/2019 15:38:26] "GET /admin/home/klasa/add/ HTTP/1.1" 200 6686
+[14/Jan/2019 15:38:26] "GET /admin/jsi18n/ HTTP/1.1" 200 3185
+[14/Jan/2019 15:38:45] "POST /admin/home/klasa/add/ HTTP/1.1" 302 0
+[14/Jan/2019 15:38:45] "GET /admin/home/klasa/ HTTP/1.1" 200 4482
+[14/Jan/2019 15:38:45] "GET /admin/jsi18n/ HTTP/1.1" 200 3185
+[14/Jan/2019 15:38:49] "GET /admin/home/ HTTP/1.1" 200 3704
+[14/Jan/2019 15:38:50] "GET /admin/home/nxenesi/ HTTP/1.1" 200 3168
+[14/Jan/2019 15:38:50] "GET /admin/jsi18n/ HTTP/1.1" 200 3185
+[14/Jan/2019 15:38:51] "GET /admin/home/nxenesi/add/ HTTP/1.1" 200 6587
+[14/Jan/2019 15:38:51] "GET /admin/jsi18n/ HTTP/1.1" 200 3185
+[14/Jan/2019 15:39:23] "POST /admin/home/nxenesi/add/ HTTP/1.1" 302 0
+[14/Jan/2019 15:39:23] "GET /admin/home/nxenesi/ HTTP/1.1" 200 4520
+[14/Jan/2019 15:39:23] "GET /admin/jsi18n/ HTTP/1.1" 200 3185
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 14, 2019 - 15:40:51
+Django version 2.1.5, using settings 'ditari.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 14, 2019 - 15:41:29
+Django version 2.1.5, using settings 'ditari.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+C:\Users\J-Coders-Pc4\Desktop\ditari>
+
+C:\Users\J-Coders-Pc4\Desktop\ditari>
+C:\Users\J-Coders-Pc4\Desktop\ditari>python manage.py makemigrations
+Migrations for 'home':
+  home\migrations\0006_perioda.py
+    - Create model perioda
+
+C:\Users\J-Coders-Pc4\Desktop\ditari>python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, home, sessions
+Running migrations:
+  Applying home.0006_perioda... OK
+
+C:\Users\J-Coders-Pc4\Desktop\ditari>python manage.py runserver
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 14, 2019 - 15:43:26
+Django version 2.1.5, using settings 'ditari.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[14/Jan/2019 15:43:30] "GET /admin/home/nxenesi/ HTTP/1.1" 200 4335
+[14/Jan/2019 15:43:30] "GET /admin/jsi18n/ HTTP/1.1" 200 3185
+[14/Jan/2019 15:43:32] "GET /admin/ HTTP/1.1" 200 6177
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 14, 2019 - 15:44:22
+Django version 2.1.5, using settings 'ditari.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[14/Jan/2019 15:44:29] "GET /admin/ HTTP/1.1" 200 6608
